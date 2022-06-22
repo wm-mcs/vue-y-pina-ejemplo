@@ -2,23 +2,20 @@
 defineProps({
   msg: {
     type: String,
-    required: true,
+    required: true
   },
   foo: {
     type: String,
-    required: true,
-  },
+    required: true
+  }
 });
 </script>
 
 <template>
   <div class="w-full">
-    <div>
-      Header <b>{{ msg }} {{ foo }}</b>
+    <div :class="`container mx-auto flex flex-col items-center`">
+      <slot></slot>
     </div>
-    <slot></slot>
-
-    <div>Footer</div>
   </div>
 </template>
 
