@@ -13,7 +13,7 @@ function buttonClick() {
 </script>
 
 <template>
-  <Layout msg="Mensaje" foo="De Mauricio">
+  <Layout msg="Mensaje" foo="De Mauricio" class="bg-gray-200">
     <div class="container flex flex-col items-center space-y-6 py-6">
       <h1 class="text-3xl font-bold">Chat de prueba</h1>
       <Chat> </Chat>
